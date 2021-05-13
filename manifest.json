@@ -1,0 +1,17 @@
+{
+  "name": "Youtube auto consent",
+  "version": "1.0",
+  "manifest_version": 2,
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://consent.youtube.com/*"
+      ],
+      "js": ["contentScript.js"],
+      "css": ["mycss.css"]
+    }
+  ]
+}
